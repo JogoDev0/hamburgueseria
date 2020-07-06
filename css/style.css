@@ -1,0 +1,36 @@
+@import url(reset.css);
+
+/* Fuentes de google fonts: handlee y montserrat 400,700 */
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+/* font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif; */
+
+/* Fuentes de font-awesome */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css");
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+/* Creación de variables de uso frecuente*/
+:root{
+    --color-principal: #fa573a;
+    --color-secundario: #21242e;
+    --fuentePrincipal: 'Montserrat', sans-serif; 
+    --fuenteSecundaria: 'Handlee', cursive;
+}
+
+body{
+    font-family: var(--fuentePrincipal);
+    font-size: 1em;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
