@@ -242,4 +242,92 @@ main {
     margin-bottom: 90px;
 }
 
+main section {
+    padding: 2.125em 0;
+}
+
+main section h2 {
+    color: black;
+    font-family: var(--fuenteSecundaria);
+    font-size: 2em;
+    text-align: center;
+}
+
+main section h2 span {
+    color: var(--color-principal);
+}
+
+main section .underline {
+    position: relative;
+    width: 5em;
+    margin: 0 auto;
+    color: var(--color-principal);
+    font-weight: bolder;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+main section .underline hr {
+    border-color: var(--color-principal);
+    position: absolute;
+    width: 100%;
+    top: -0.063em;
+}
+
+main #ourservices .flex {
+    flex-wrap: wrap;
+    padding: 0 0.825em;
+}
+
+main #ourservices .flex article {
+    width: 100%;
+    padding: 1.825em 0;
+    border-bottom: 1px solid#aaa;
+}
+
+main #ourservices .flex article div i {
+    color: var(--color-principal);
+    font-size: 2em;
+    padding: 0.5em;
+    border: 2px solid var(--color-principal);
+}
+
+main #ourservices .flex article div .fa-truck {
+    transform: rotateY(180deg);
+}
+
+main #ourservices .flex article h3 {
+    font-weight: 700;
+    margin: 1em 0;
+}
+
+.enlace {
+    text-decoration: none;
+    display: block;
+    margin-top: 1em;
+    color: var(--color-principal);
+}
+
+@media(min-width: 48.000em) {
+    main #ourservices .flex article {
+        width: 50%;
+        padding: 1.825em;
+        border-bottom: 0px solid#aaa;
+        border-left: 1px solid #aaa;
+        margin-bottom: 1em;
+    }
+    main #ourservices .flex article:last-child {
+        width: 100%;
+    }
+}
+
+@media(min-width: 62.750em) {
+    main #ourservices .flex article {
+        width: 33.33%;
+    }
+    main #ourservices .flex article:last-child {
+        width: 33.33%;
+    }
+}
+
 /* Fin main */
