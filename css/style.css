@@ -24,6 +24,7 @@ font-family: 'Montserrat', sans-serif; */
     --fuentePrincipal: 'Montserrat', sans-serif;
     --fuenteSecundaria: 'Handlee', cursive;
     --anchoMaximo: 1100px;
+    --color-principal-transparent: #fa573abb;
 }
 
 body {
@@ -238,6 +239,8 @@ footer a:hover {
 
 /* Inicio main */
 
+/* Fin de sección our services */
+
 main {
     margin-bottom: 90px;
 }
@@ -330,6 +333,52 @@ main #ourservices .flex article h3 {
     }
 }
 
+/* Fin de sección our services */
+
+/* Inicio sección about us */
+
+main #aboutus .flex {
+    flex-direction: column;
+}
+
+main #aboutus .flex .columna {
+    padding: 0.825em;
+}
+
+main #aboutus .flex .columna h3 {
+    font-weight: 700;
+}
+
+main #aboutus .flex .columna h4 {
+    color: var(--color-principal);
+    margin: 1em 0;
+}
+
+main #aboutus .marco {
+    border: 3px solid var(--color-principal);
+    transform: rotateZ(10deg);
+    width: 90%;
+    margin: 0 auto;
+    transition: 1s;
+}
+
+main #aboutus .marco img {
+    transform: rotateZ(-10deg);
+    transition: 1s;
+}
+
+main #aboutus .columna:hover .marco, main #aboutus .columna:hover img {
+    transform: rotateZ(0deg);
+}
+
+@media(min-width: 48.000em) {
+    main #aboutus .flex {
+        flex-direction: row;
+    }
+}
+
+/* Fin sección about us */
+
 /* Fin main */
 
 /* INICIO DE BLOG */
@@ -366,8 +415,7 @@ main #blog .flex article:last-child .imagen {
 }
 
 main #blog .flex article .imagen .fecha {
-    background-color: var(--color-principal);
-    opacity: 0.7;
+    background-color: var(--color-principal-transparent);
     position: relative;
     color: white;
     padding: 0.15em 0.5em;
