@@ -239,7 +239,7 @@ footer a:hover {
 
 /* Inicio main */
 
-/* Fin de sección our services */
+/* Inicio de sección our services */
 
 main {
     margin-bottom: 90px;
@@ -394,7 +394,7 @@ main #blog .flex article {
     padding: 1em;
 }
 
-main #blog .flex article .imagen {
+main .flex article .imagen {
     width: 100%;
     height: 23vh;
     background-repeat: no-repeat;
@@ -465,3 +465,109 @@ main #blog .flex article .texto a {
 /* Fin de main */
 
 /* FIN DE BLOG */
+
+/* INICIO DE MENU */
+
+/* Inicio de main */
+
+main #menu {
+    background-color: var(--color-secundario);
+    color: white;
+}
+
+main #menu h2 {
+    color: white;
+    font-family: var(--fuenteSecundaria);
+    font-size: 2em;
+    text-align: center;
+}
+
+main #menu h2 span {
+    color: var(--color-principal);
+}
+
+main #menu .flex {
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+main #menu .flex article {
+    width: 100%;
+    margin-bottom: 5em;
+}
+
+main #menu .flex ul li a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    padding: 1.250em;
+    color: white;
+    transition: 0.5s;
+    border-radius: 0.5em;
+}
+
+main #menu .flex ul li a .activo {
+    background-color: var(--color-principal);
+}
+
+main #menu .flex ul li a:hover {
+    background-color: var(--color-principal);
+}
+
+main #menu .flex article h2 {
+    text-align: left;
+}
+
+main #menu .flex article hr {
+    border-color: var(--color-principal);
+    width: 5em;
+    text-align: left;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+main #menu #underline {
+    position: relative;
+    width: 5em;
+    color: var(--color-principal);
+    font-weight: bolder;
+    margin-bottom: 1em;
+}
+
+main #menu .flex article:last-child>div {
+    width: 90%;
+    margin: 0 auto 5em auto;
+}
+
+main #menu .flex article .imagen {
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+main #menu .flex article div:first-child .imagen {
+    background-image: url("../images/t1.jpg");
+}
+
+main #menu .flex article div:nth-child(2) .imagen {
+    background-image: url("../images/t4.jpg");
+}
+
+main #menu .flex article div:last-child .imagen {
+    background-image: url("../images/t2.jpg");
+}
+
+main #menu .flex article:last-child>div h2 {
+    margin: 1em 0;
+}
+
+#mainMenu {
+    margin-bottom: 0em;
+}
+
+/* Fin de main */
+
+/* FIN DE MENU */
