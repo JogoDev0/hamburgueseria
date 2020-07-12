@@ -396,7 +396,7 @@ main #blog .flex article {
 
 main .flex article .imagen {
     width: 100%;
-    height: 23vh;
+    min-height: 15em;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -507,10 +507,6 @@ main #menu .flex ul li a {
     border-radius: 0.5em;
 }
 
-main #menu .flex ul li a .activo {
-    background-color: var(--color-principal);
-}
-
 main #menu .flex ul li a:hover {
     background-color: var(--color-principal);
 }
@@ -542,10 +538,10 @@ main #menu .flex article:last-child>div {
 }
 
 main #menu .flex article .imagen {
-    height: 50vh;
+    min-height: 25em;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
 }
 
 main #menu .flex article div:first-child .imagen {
@@ -566,6 +562,42 @@ main #menu .flex article:last-child>div h2 {
 
 #mainMenu {
     margin-bottom: 0em;
+}
+
+@media(min-width: 62.750em) {
+    main #menu .flex {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 25em 100%;
+        align-items: start;
+        align-content: start;
+    }
+    main #menu .flex article:first-child {
+        margin-left: 1em;
+    }
+    main #menu .flex article:nth-child(2) {
+        margin-left: 1em;
+    }
+    main #menu .flex article:last-child {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    main #menu .flex article:last-child>div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    main #menu .flex article:last-child>div .imagen {
+        width: 33%;
+        min-height: 12em;
+        height: auto;
+    }
+    main #menu .flex article:last-child div {
+        font-size: 0.85em;
+    }
 }
 
 /* Fin de main */
